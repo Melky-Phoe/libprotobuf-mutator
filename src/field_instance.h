@@ -190,7 +190,7 @@ class ConstFieldInstance {
     return descriptor_->message_type();
   }
 
-  bool EnforceUtf8() const { return descriptor_->requires_utf8_validation(); }
+  bool EnforceUtf8() const { return true; }
 
   const protobuf::FieldDescriptor* descriptor() const { return descriptor_; }
 
